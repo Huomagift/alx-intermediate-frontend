@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid and Flexbox Layout</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    @media (max-width: 768px) {
+        main {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+
+<body class="p-4">
+<header class="bg-blue-500 text-white p-4">
+    <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+</header>
+
+<main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+    <section class="lg:col-span-2 flex flex-col sm:flex-row gap-4">
+        <div class="flex-1 bg-red-200 p-4">Flexbox Item 1</div>
+        <div class="flex-1 bg-red-400 p-4">Flexbox Item 2</div>
+    </section>
+
+    <aside class="bg-green-200 p-4">Sidebar</aside>
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:col-span-3">
+        <img src="https://fossa.com/snippet-scanning-feature.png" alt="C# snippet"
+            class="w-full h-48 object-cover rounded shadow">
+        <img src="https://miro.medium.com/v2/resize%3Afit%3A1400/1%2A1vV7ii6BwP9c5iNGt-f2MA.png"
+            alt="Python snippet"
+            class="w-full h-48 object-cover rounded shadow">
+        <img src="https://snappify.com/images/blog/covers/how-to-easily-create-an-image-from-a-code-snippet.png"
+            alt="JavaScript snippet"
+            class="w-full h-48 object-cover rounded shadow">
+        <img src="https://www.codiga.io/img/posts/how-to-display-code-snippets-in-html/hero.jpg"
+            alt="Html snippet"
+            class="w-full h-48 object-cover rounded shadow">
+    </section>
+</main>
+
+<footer class="bg-gray-800 text-white p-4 mt-4">
+    <p>&copy; 2024 John Doe's Blog</p>
+</footer>
+</body>
+
+</html>
