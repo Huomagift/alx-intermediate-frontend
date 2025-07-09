@@ -1,0 +1,13 @@
+# Sass Installation Steps
+
+1. I ensured that **Node.js** was already installed on my machine.
+
+2. I created a **new directory** for my project using the terminal and navigated into it.
+
+3. Inside the project directory, I ran the following command to install Sass:
+
+   ```
+   npm install sass@v3.7.4
+   ```
+
+4. I pressed **Enter**, and npm installed Sass in the project directory.
